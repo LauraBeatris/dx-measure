@@ -13,7 +13,7 @@ export async function Leaderboard() {
 
   return (
     <ul
-      className="animate-fade-up mx-auto grid gap-2"
+      className="mx-auto grid animate-fade-up gap-2"
       style={{ animationDelay: '0.25s', animationFillMode: 'forwards' }}
     >
       {leaderboard.map((tool, index) => {
@@ -63,6 +63,7 @@ export async function Leaderboard() {
             <div className="flex items-center space-x-1 rounded-md bg-gray-100 px-2 py-0.5 text-gray-700">
               <StarIcon />
 
+              {/* TODO - Calculare average rate */}
               <p className="text-sm">{tool.average_rate}</p>
             </div>
           </li>
